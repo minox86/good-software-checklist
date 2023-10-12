@@ -38,12 +38,23 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 
 ## Architecture
 
-- 
+- Follow the [**SOLID principles**](https://www.baeldung.com/solid-principles)
+- Use a [**Clean Architecture**](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- **Decouple** avoiding or breaking dependencies
+- Use [**Architecture Decision Records (ADRs)**](https://adr.github.io/)
+- Avoid monoliths, design [microservices](https://microservices.io/) or [modular monoliths](https://files.gotocon.com/uploads/slides/conference_12/515/original/gotoberlin2018-modular-monoliths.pdf)
+- Produce and consume **APIs**
+- Use the [**CQRS pattern**](https://martinfowler.com/bliki/CQRS.html)
+- Use the [**Transactional Outbox pattern**](https://microservices.io/patterns/data/transactional-outbox.html)
+- Use [**Change data capture**](https://www.confluent.io/learn/change-data-capture) to implement the Transactional Outbox pattern
+- Alway implement **health checks**
 
 ## Development
 
 ### General
-- Unit tests
+- Follow the [**KISS principle**](https://www.interaction-design.org/literature/topics/keep-it-simple-stupid)
+
+- 
 - Logging
 - Tracing
 - Alerting
