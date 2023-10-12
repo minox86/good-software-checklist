@@ -19,12 +19,96 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)**
 - Organize projects using **[monorepo](https://monorepo.tools/)**
 - Use **[git hooks](https://git-scm.com/docs/githooks)** to add pre-commit checks
+- Setup a **bot for dependency updates**
+  - [`Renovate`](https://www.mend.io/renovate/)  
 
 ## IDE
 
 - Use an **IDE**
   - [`Visul Studio Code`](https://code.visualstudio.com/)
-- Use a generative AI copilot
+- Use a generative AI **copilot**
   - [`GitHub Copilot`](https://github.com/features/copilot)
-- Use a secure coding plugin
-  - [`Snyk`](https://snyk.io/platform/ide-plugins/)  
+- Use a **secure coding** plugin
+  - [`Snyk`](https://snyk.io/platform/ide-plugins/)
+- Use a **linter** plugin
+  - [`ESlint`](https://eslint.org/)
+  - [`SonarLint from SonarSource`](https://www.sonarsource.com/products/sonarlint/features/)
+- Use a **prettier** plugin
+  - [`Prettier`](https://prettier.io/)
+
+## Architecture
+
+- 
+
+## Development
+
+### General
+- Unit tests
+- Logging
+- Tracing
+- Alerting
+- Scripts for [compiling], building, starting, debugging, testing, releasing
+
+### Database
+
+- Choose the right database ([**SQL vs NoSQL**](https://www.coursera.org/articles/nosql-vs-sql)) 
+- Use **proper datatypes**
+- Follow a **naming convention**
+- Use **indexes**
+- Continuously optimize performance through **index tuning**
+
+### Back-end
+- API based back-end
+- OpenAPI / GraphQL / gRPC spec
+
+
+### Front-end
+-
+
+
+## Infrastructure
+
+- Develop **Infrastructore as a Code**
+  - [`Terraform`](https://www.terraform.io/)
+- Use **GitOps**
+  - [`Terraform Cloud`](https://developer.hashicorp.com/terraform/cloud-docs)
+  - [`GitLab CI`](https://docs.gitlab.com/ee/ci/)
+  - [`GitHub Actions`](https://github.com/features/actions)
+- Save **secrets in a secure storage**
+  - [`AWS Systems Manager Parameter Store`](https://aws.amazon.com/it/systems-manager/)
+  - [`Vault by HashiCorp`](https://www.vaultproject.io/) 
+- Store the infrastructure state in the cloud
+  - [`Terraform Cloud`](https://developer.hashicorp.com/terraform/cloud-docs)
+  - [`AWS S3`](https://aws.amazon.com/it/s3/)
+- **Modularize infastructure** for reuse
+- Design for **scalability**
+  - [`Kubernetes`](https://kubernetes.io/)
+  - [`AWS ECS`](https://aws.amazon.com/it/ecs/)
+- Design for **security**
+  - [`AWS WAF`](https://aws.amazon.com/it/waf/)
+- Design for **availability**
+- Design for **reliability**
+- Design for **disaster recovery**
+- Design for **auto healing**
+- Monitor [**DORA metrics**](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)
+
+## DevOps
+
+- Run applications in **containers**
+  - [`Docker`](https://www.docker.com/)
+- Use **caches** to speed up the pipeline
+- Configure a **build step**
+- Use a **CI/CD** tool
+  - [`AWS Code Pipeline`](https://aws.amazon.com/it/codepipeline/)
+  - [`GitLab CI`](https://docs.gitlab.com/ee/ci/)
+  - [`GitHub Actions`](https://github.com/features/actions)
+- Configure a **testing step** in your pipeline
+- Configure a **coverage step** in your pipeline
+  - [`Codecov`](https://about.codecov.io/)  
+- Configure a **security check step** in your pipeline
+  - [`Snyk`](https://docs.snyk.io/integrations/snyk-ci-cd-integrations)
+- Configure a **code quality check step** in your pipeline
+  - [`ESlint`](https://eslint.org/)
+  - [`SonarLint from SonarSource`](https://www.sonarsource.com/products/sonarlint/features/)
+- Configure a **deploy step**
+
