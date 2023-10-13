@@ -85,12 +85,13 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 
 ### Back-end
 
+- Build **stateless back-ends**
 - Produce only **APIs** with an automatic **specification**
   - [`OpenAPI`](https://www.openapis.org/)
   - [`GraphQL`](https://graphql.org/)
   - [`gRPC`](https://grpc.io/)
 - Produce and consume **events** with a standard **specification**
-  - [`Cloud Events`](https://cloudevents.io/) 
+  - [`Cloud Events`](https://cloudevents.io/)
 - Secure your APIs with **JWT tokens**
 - Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
 - Use **caching**
@@ -99,6 +100,8 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`S3 presigned URLs`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 ### Front-end
+
+- Choose consciously between [**CSR, SSR, SSG and ISR**](https://dev.to/pahanperera/visual-explanation-and-comparison-of-csr-ssr-ssg-and-isr-34ea)
 - Use a **typed language**
   - [`TypeScript`](https://www.typescriptlang.org/)
 - Enforce [**end to end type safing**](https://sabinadams.hashnode.dev/end-to-end-type-safety-what-why-and-how)
@@ -115,11 +118,21 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **captcha**
 - Use **appropriate image formats** (e.g., SVG, WebP)
 - Use **end to end testing** for critical paths
-  - [Playwright](https://playwright.dev/)
+  - [`Playwright`](https://playwright.dev/)
 - Define a [**manifest**](https://web.dev/articles/add-manifest?hl=it) for your app
+- Use a **CSS preprocessor**
+  - [`Sass`](https://sass-lang.com/)
+- Use a [**design system**](https://www.toptal.com/designers/design-systems/benefits-of-design-system)
  
 ### Mobile
-- 
+- Choose the right platform between [**Native Apps, Web Apps and Hybrid Apps**](https://aws.amazon.com/compare/the-difference-between-web-apps-native-apps-and-hybrid-apps)
+- Consider **multiplatform development**
+  - [`Kotlin Multiplatform`](https://kotlinlang.org/lp/multiplatform/)
+- Use **native components and services** whenever possible
+- Focus on **user experience**
+- Design **navigations**
+- Use **deployment automation**
+  - [`Fastlane`](https://fastlane.tools/)
 
 ## Infrastructure
 
@@ -137,6 +150,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`Terraform Cloud`](https://developer.hashicorp.com/terraform/cloud-docs)
   - [`AWS S3`](https://aws.amazon.com/it/s3/)
 - **Modularize infastructure** for reuse
+- Use **managed services** when available
 - Design for **scalability**
   - [`Kubernetes`](https://kubernetes.io/)
   - [`AWS ECS`](https://aws.amazon.com/it/ecs/)
