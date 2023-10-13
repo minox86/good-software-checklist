@@ -63,8 +63,9 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Produce [**Clean Code**](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - Practice [**Domain Driven Design**](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 - Practice [**Test Driven Development**](https://www.agileway.it/test-driven-development-tdd/)
+- Do **unit tests**
 - Do [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
-- Use [IDE helpers](#IDE) for linting, formatting and check your code
+- Use [IDE helpers](#IDE) for linting, formatting and checking your code
 - Use **meaningful** variable and function **names**
 - Keep **functions** and methods **short**
 - Add only **meaningful comments** on your code
