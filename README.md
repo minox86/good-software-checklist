@@ -58,7 +58,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 
 ### General
 
-- Follow the [**KISS principle**](https://www.interaction-design.org/literature/topics/keep-it-simple-stupid)
+- Follow the [**KISS (Keep It Simple, Stupid) principle**](https://www.interaction-design.org/literature/topics/keep-it-simple-stupid)
 - Follow [**DRY (Don't Repeat Yourself) Principle**](https://www.baeldung.com/cs/dry-software-design-principle)
 - Produce [**Clean Code**](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - Practice [**Domain Driven Design**](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
