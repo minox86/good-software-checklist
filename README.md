@@ -65,6 +65,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Practice [**Test Driven Development**](https://www.agileway.it/test-driven-development-tdd/)
 - Do **unit tests**
 - Do [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
+- Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
 - Use [IDE helpers](#IDE) for linting, formatting and checking your code
 - Use **meaningful** variable and function **names**
 - Keep **functions** and methods **short**
@@ -80,7 +81,6 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **indexes**
 - Continuously optimize performance through **indexes tuning**
 - Plan and test a **backup strategy**
-- Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
 - Use [**up and down migrations**](http://vaidehijoshi.github.io/blog/2015/05/19/the-secret-life-of-your-database-part-1-migrations/)
   - [`migrate-mongo`](https://github.com/seppevs/migrate-mongo)
 
