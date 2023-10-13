@@ -46,19 +46,29 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Produce and consume **APIs**
 - Make it **observable**
   - [`Open Telemetry`](https://opentelemetry.io/)
+  - [`ELK Stack`](https://www.elastic.co/elastic-stack)
 - Use the [**CQRS pattern**](https://martinfowler.com/bliki/CQRS.html)
 - Use the [**Transactional Outbox pattern**](https://microservices.io/patterns/data/transactional-outbox.html)
 - Use [**Change data capture**](https://www.confluent.io/learn/change-data-capture) to implement the Transactional Outbox pattern
 - Always implement **health checks**
+- **Embrace standards** whenever you find them
 
 ## Development
 
 ### General
+
 - Follow the [**KISS principle**](https://www.interaction-design.org/literature/topics/keep-it-simple-stupid)
+- Follow [**DRY (Don't Repeat Yourself) Principle**](https://www.baeldung.com/cs/dry-software-design-principle)
 - Produce [**Clean Code**](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+- Practice [**Domain Driven Design**](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 - Practice [**Test Driven Development**](https://www.agileway.it/test-driven-development-tdd/)
-- 
-- Add scripts to your project fo compiling, building, starting, debugging, testing, releasing
+- Do [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
+- Use [IDE helpers](#IDE) for linting, formatting and check your code
+- Use **meaningful** variable and function **names**
+- Keep **functions** and methods **short**
+- Add only **meaningful comments** on your code
+- Add **scripts** to compile, build, start, debug, test and releasing your project
+- Try to be [**functional**](https://vimeo.com/97514630)
 
 ### Database
 
@@ -66,20 +76,32 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **proper datatypes**
 - Follow a **naming convention**
 - Use **indexes**
-- Continuously optimize performance through **index tuning**
+- Continuously optimize performance through **indexes tuning**
+- Plan and test a **backup strategy**
+- Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
+- Use [**up and down migrations**](http://vaidehijoshi.github.io/blog/2015/05/19/the-secret-life-of-your-database-part-1-migrations/)
 
 ### Back-end
-- OpenAPI / GraphQL / gRPC spec
-
+- Produce only **APIs** with an automatic **specification**
+  - [`OpenAPI`](https://www.openapis.org/)
+  - [`GraphQL`](https://graphql.org/)
+  - [`gRPC`](https://grpc.io/)
+- Produce and consume **events** with a standard **specification**
+  - [`Cloud Events`](https://cloudevents.io/) 
+- Secure your APIs with **JWT tokens**
+- Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
+- Use **caching**
+  - [`Redis`](https://redis.io/)
 
 ### Front-end
--
-
+- Use a Content Delivery Network for static resources
+  - [`AWS CloudFront`](https://aws.amazon.com/it/cloudfront/)
 
 ## Infrastructure
 
 - Develop **Infrastructore as a Code**
   - [`Terraform`](https://www.terraform.io/)
+- Have **at least two environments**: test and production
 - Use **GitOps**
   - [`Terraform Cloud`](https://developer.hashicorp.com/terraform/cloud-docs)
   - [`GitLab CI`](https://docs.gitlab.com/ee/ci/)
@@ -87,7 +109,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Save **secrets in a secure storage**
   - [`AWS Systems Manager Parameter Store`](https://aws.amazon.com/it/systems-manager/)
   - [`Vault by HashiCorp`](https://www.vaultproject.io/) 
-- Store the infrastructure state in the cloud
+- Store the **infrastructure state** in the cloud
   - [`Terraform Cloud`](https://developer.hashicorp.com/terraform/cloud-docs)
   - [`AWS S3`](https://aws.amazon.com/it/s3/)
 - **Modularize infastructure** for reuse
@@ -101,6 +123,8 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Design for **disaster recovery**
 - Design for **auto healing**
 - Monitor [**DORA metrics**](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)
+- Do **load tests**
+  - [`k6`](https://k6.io/)
 
 ## DevOps
 
@@ -121,4 +145,5 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`ESlint`](https://eslint.org/)
   - [`SonarLint from SonarSource`](https://www.sonarsource.com/products/sonarlint/features/)
 - Configure a **deploy step**
+- Use [**blue green deployment**](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html)
 
