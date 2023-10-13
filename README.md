@@ -19,6 +19,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)**
 - Organize projects using **[monorepo](https://monorepo.tools/)**
 - Use **[git hooks](https://git-scm.com/docs/githooks)** to add pre-commit checks
+  - [`Husky`](https://typicode.github.io/husky/)
 - Setup a **bot for dependency updates**
   - [`Renovate`](https://www.mend.io/renovate/)  
 
@@ -80,8 +81,10 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Plan and test a **backup strategy**
 - Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
 - Use [**up and down migrations**](http://vaidehijoshi.github.io/blog/2015/05/19/the-secret-life-of-your-database-part-1-migrations/)
+  - [`migrate-mongo`](https://github.com/seppevs/migrate-mongo)
 
 ### Back-end
+
 - Produce only **APIs** with an automatic **specification**
   - [`OpenAPI`](https://www.openapis.org/)
   - [`GraphQL`](https://graphql.org/)
@@ -92,10 +95,31 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
 - Use **caching**
   - [`Redis`](https://redis.io/)
+- Upload and download files with **presigned URLs**
+  - [`S3 presigned URLs`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 ### Front-end
-- Use a Content Delivery Network for static resources
+- Use a **typed language**
+  - [`TypeScript`](https://www.typescriptlang.org/)
+- Enforce [**end to end type safing**](https://sabinadams.hashnode.dev/end-to-end-type-safety-what-why-and-how)
+- **Minify and compress** your bundle
+- Use a **bundler tool**
+  - [`Turbo`](https://turbo.build/)
+  - [`Nx`](https://nx.dev/)
+- Use **browser caching**
+- Use a **Content Delivery Network (CDN)**
   - [`AWS CloudFront`](https://aws.amazon.com/it/cloudfront/)
+- Use **pagination or infinite scroll**
+- Use [**debounce/ throttle**](https://webdesign.tutsplus.com/javascript-debounce-and-throttle--cms-36783t)
+- Use [**lazy loading**](https://www.codemotion.com/magazine/backend/how-to-boost-performance-with-lazy-loading/)
+- Use **captcha**
+- Use **appropriate image formats** (e.g., SVG, WebP)
+- Use **end to end testing** for critical paths
+  - [Playwright](https://playwright.dev/)
+- Define a [**manifest**](https://web.dev/articles/add-manifest?hl=it) for your app
+ 
+### Mobile
+- 
 
 ## Infrastructure
 
