@@ -70,7 +70,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **meaningful** variable and function **names**
 - Keep **functions** and methods **short**
 - Add only **meaningful comments** on your code
-- Add **scripts** to compile, build, start, debug, test and releasing your project
+- Add **scripts** to compile, build, start, debug, test and release your project
 - Try to be [**functional**](https://vimeo.com/97514630)
 
 ### Database
@@ -87,7 +87,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 ### Back-end
 
 - Build **stateless back-ends**
-- Produce only **APIs** with an automatic **specification**
+- Produce **APIs** equipped with **specifications**
   - [`OpenAPI`](https://www.openapis.org/)
   - [`GraphQL`](https://graphql.org/)
   - [`gRPC`](https://grpc.io/)
@@ -170,11 +170,11 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Run applications in **containers**
   - [`Docker`](https://www.docker.com/)
 - Use **caches** to speed up the pipeline
-- Configure a **build step**
 - Use a **CI/CD** tool
   - [`AWS Code Pipeline`](https://aws.amazon.com/it/codepipeline/)
   - [`GitLab CI`](https://docs.gitlab.com/ee/ci/)
   - [`GitHub Actions`](https://github.com/features/actions)
+- Configure a **build step**
 - Configure a **testing step** in your pipeline
 - Configure a **coverage step** in your pipeline
   - [`Codecov`](https://about.codecov.io/)  
