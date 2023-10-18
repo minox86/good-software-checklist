@@ -16,12 +16,14 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`GitFlow`](https://dev.to/the_previ/a-practical-introduction-to-git-flow-5420)
   - [`GitHub flow`](https://docs.github.com/en/get-started/quickstart/github-flow)
   - [`Rebase and squash`](https://matt-rickard.com/squash-merge-or-rebase) insted of merge
-- Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)**
+- Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)** and release automation tools
+  - [`release-it`](https://github.com/release-it/release-it)
 - Organize projects using **[monorepo](https://monorepo.tools/)**
 - Use **[git hooks](https://git-scm.com/docs/githooks)** to add pre-commit checks
   - [`Husky`](https://typicode.github.io/husky/)
 - Setup a **bot for dependency updates**
-  - [`Renovate`](https://www.mend.io/renovate/)  
+  - [`Renovate`](https://www.mend.io/renovate/)
+- [**Merge automatically**](https://www.thoughtworks.com/radar/techniques/automatic-merging-of-dependency-update-prs) dependency update PRs
 
 ## IDE
 
