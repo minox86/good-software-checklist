@@ -105,9 +105,9 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 ### Front-end
 
 - Choose consciously between [**CSR, SSR, SSG and ISR**](https://dev.to/pahanperera/visual-explanation-and-comparison-of-csr-ssr-ssg-and-isr-34ea)
-- Use a **typed language**
+- Use a **statically typed language**
   - [`TypeScript`](https://www.typescriptlang.org/)
-- Enforce [**end to end type safing**](https://sabinadams.hashnode.dev/end-to-end-type-safety-what-why-and-how)
+- Enforce [**end to end type safety**](https://sabinadams.hashnode.dev/end-to-end-type-safety-what-why-and-how)
 - **Minify and compress** your bundle
 - Use a **bundler tool**
   - [`Turbo`](https://turbo.build/)
