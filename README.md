@@ -32,9 +32,9 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use an AI-friendly **documentation-first** approach
 - Maintaint a **clear and updated README**
 - Use **diagram as code**
-  - [Mermaid](https://mermaid.js.org/)
+  - [`Mermaid`](https://mermaid.js.org/)
 - Implement an **automated changelog generation**
-  - [conventional changelog](https://github.com/conventional-changelog/conventional-changelog)
+  - [`conventional changelog`](https://github.com/conventional-changelog/conventional-changelog)
 - Add only **meaningful comments** on your code
 
 ## IDE
@@ -81,22 +81,22 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Add **scripts** to compile, build, start, debug, test and release your project
 - Try to be [**functional**](https://vimeo.com/97514630)
 - Use **feature flags**
-  - [LaunchDarkly](https://launchdarkly.com/)
-  - [Unleash](https://www.getunleash.io/)
+  - [`LaunchDarkly`](https://launchdarkly.com/)
+  - [`Unleash`](https://www.getunleash.io/)
 
 ### Testing
 - Implement **unit tests**
-  - [JUnit](https://junit.org/)
-  - [Jest](https://jestjs.io/)
-  - [Vitest](https://vitest.dev/)
+  - [`JUnit`](https://junit.org/)
+  - [`Jest`](https://jestjs.io/)
+  - [`Vitest`](https://vitest.dev/)
 - Implement **integration tests**
 - Implement **e2e tests**
-  - [Platwrigth](https://playwright.dev/)
+  - [`Playwright`](https://playwright.dev/)
 - Implement [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
 - Implement **performance and load testing**
-  - [K6](https://k6.io/)
+  - [`K6`](https://k6.io/)
 - Configure **mutation tests**
-  - [Stryker](https://stryker-mutator.io/)
+  - [`Stryker`](https://stryker-mutator.io/)
 
 ### Security
 
@@ -105,14 +105,14 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Apply the [**principle of least privilege (PoLP)**](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
 - Do periodic **Web Application Penetration Testing (WAPT)**
 - Use a **Software Composition Analysis (SCA)** tool
-  - [Snyk](https://snyk.io/)
+  - [`Snyk`](https://snyk.io/)
 - Use a **Static Application Security Testing (SAST)** tool
-  - [SonarQube](https://www.sonarsource.com)
-  - [Checkmarx](https://checkmarx.com/)
+  - [`SonarQube`](https://www.sonarsource.com)
+  - [`Checkmarx`](https://checkmarx.com/)
 - Use a **Cloud Native Application Protection (CNAPP)** tool
-  - [Wiz](https://www.wiz.io/)
+  - [`Wiz`](https://www.wiz.io/)
 - Setup **automated test coverage**
-  - [CodeCov](https://about.codecov.io/)
+  - [`CodeCov`](https://about.codecov.io/)
 - Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
 - Upload and download files with **presigned URLs**
   - [`S3 presigned URLs`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
