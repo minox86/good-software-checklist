@@ -16,6 +16,8 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`GitFlow`](https://dev.to/the_previ/a-practical-introduction-to-git-flow-5420)
   - [`GitHub flow`](https://docs.github.com/en/get-started/quickstart/github-flow)
   - [`Rebase and squash`](https://matt-rickard.com/squash-merge-or-rebase) insted of merge
+  - [`Code review`](https://github.com/features/code-review)
+- User **[semantic versioning]*(https://semver.org/)
 - Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)** and release automation tools
   - [`release-it`](https://github.com/release-it/release-it)
 - Organize projects using **[monorepo](https://monorepo.tools/)**
@@ -25,12 +27,23 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`Renovate`](https://www.mend.io/renovate/)
 - [**Merge automatically**](https://www.thoughtworks.com/radar/techniques/automatic-merging-of-dependency-update-prs) dependency update PRs
 
+## Documentation
+
+- Use an AI-friendly **documentation-first** approach
+- Maintaint a **clear and updated README**
+- Use **diagram as code**
+  - [Mermaid](https://mermaid.js.org/)
+- Implement an **automated changelog generation**
+  - [conventional changelog](https://github.com/conventional-changelog/conventional-changelog)
+- Add only **meaningful comments** on your code
+
 ## IDE
 
 - Use an **IDE**
   - [`Visul Studio Code`](https://code.visualstudio.com/)
 - Use a generative AI **copilot**
   - [`GitHub Copilot`](https://github.com/features/copilot)
+  - [`Cursor`](https://www.cursor.com/)
 - Use a **secure coding** plugin
   - [`Snyk`](https://snyk.io/platform/ide-plugins/)
 - Use a **linter** plugin
@@ -47,9 +60,6 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use [**Architecture Decision Records (ADRs)**](https://adr.github.io/)
 - Avoid monoliths, design [**microservices**](https://microservices.io/) or [**modular monoliths**](https://files.gotocon.com/uploads/slides/conference_12/515/original/gotoberlin2018-modular-monoliths.pdf)
 - Produce and consume **APIs**
-- Make it **observable**
-  - [`Open Telemetry`](https://opentelemetry.io/)
-  - [`ELK Stack`](https://www.elastic.co/elastic-stack)
 - Use the [**CQRS pattern**](https://martinfowler.com/bliki/CQRS.html)
 - Use the [**Transactional Outbox pattern**](https://microservices.io/patterns/data/transactional-outbox.html)
 - Use [**Change data capture**](https://www.confluent.io/learn/change-data-capture) to implement the Transactional Outbox pattern
@@ -65,19 +75,53 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Produce [**Clean Code**](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - Practice [**Domain Driven Design**](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 - Practice [**Test Driven Development**](https://www.agileway.it/test-driven-development-tdd/)
-- Do **unit tests**
-- Do [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
-- Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
 - Use [IDE helpers](#IDE) for linting, formatting and checking your code
 - Use **meaningful** variable and function **names**
 - Keep **functions** and methods **short**
-- Add only **meaningful comments** on your code
 - Add **scripts** to compile, build, start, debug, test and release your project
 - Try to be [**functional**](https://vimeo.com/97514630)
+- Use **feature flags**
+  - [LaunchDarkly](https://launchdarkly.com/)
+  - [Unleash](https://www.getunleash.io/)
+
+### Testing
+- Implement **unit tests**
+  - [JUnit](https://junit.org/)
+  - [Jest](https://jestjs.io/)
+  - [Vitest](https://vitest.dev/)
+- Implement **integration tests**
+- Implement **e2e tests**
+  - [Platwrigth](https://playwright.dev/)
+- Implement [**regression tests**](https://katalon.com/resources-center/blog/regression-testing)
+- Implement **performance and load testing**
+  - [K6](https://k6.io/)
+- Configure **mutation tests**
+  - [Stryker](https://stryker-mutator.io/)
+
+### Security
+
+- Follow [**OWASP Security Principles**](https://owasp.org/www-project-developer-guide/draft/04-foundations/03-security-principles.html)
+- Design a [**Zero Trust Achitecture**](https://www.nist.gov/publications/zero-trust-architecture)
+- Apply the [**principle of least privilege (PoLP)**](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
+- Do periodic **Web Application Penetration Testing (WAPT)**
+- Use a **Software Composition Analysis (SCA)** tool
+  - [Snyk](https://snyk.io/)
+- Use a **Static Application Security Testing (SAST)** tool
+  - [SonarQube](https://www.sonarsource.com)
+  - [Checkmarx](https://checkmarx.com/)
+- Use a **Cloud Native Application Protection (CNAPP)** tool
+  - [Wiz](https://www.wiz.io/)
+- Setup **automated test coverage**
+  - [CodeCov](https://about.codecov.io/)
+- Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
+- Upload and download files with **presigned URLs**
+  - [`S3 presigned URLs`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 ### Database
 
 - Choose the right database ([**SQL vs NoSQL**](https://www.coursera.org/articles/nosql-vs-sql)) 
+- Setup **automated backups** and test restore
+- Use **connection pooling**
 - Use **proper datatypes**
 - Follow a **naming convention**
 - Use **indexes**
@@ -85,6 +129,8 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Plan and test a **backup strategy**
 - Use [**up and down migrations**](http://vaidehijoshi.github.io/blog/2015/05/19/the-secret-life-of-your-database-part-1-migrations/)
   - [`migrate-mongo`](https://github.com/seppevs/migrate-mongo)
+- Use **read replicas** to scale reads
+- Use **database seeding** for development and test environments
 
 ### Back-end
 
@@ -96,11 +142,10 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Produce and consume **events** with a standard **specification**
   - [`Cloud Events`](https://cloudevents.io/)
 - Secure your APIs with **JWT tokens**
-- Use [**OAuth 2.0**](https://oauth.net/2/) authorization protocol
 - Use **caching**
   - [`Redis`](https://redis.io/)
-- Upload and download files with **presigned URLs**
-  - [`S3 presigned URLs`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
+- Implement **rate limiting**
+- Use **mocking** for development
 
 ### Front-end
 
@@ -120,12 +165,12 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use [**lazy loading**](https://www.codemotion.com/magazine/backend/how-to-boost-performance-with-lazy-loading/)
 - Use **captcha**
 - Use **appropriate image formats** (e.g., SVG, WebP)
-- Use **end to end testing** for critical paths
-  - [`Playwright`](https://playwright.dev/)
 - Define a [**manifest**](https://web.dev/articles/add-manifest?hl=it) for your app
 - Use a **CSS preprocessor**
   - [`Sass`](https://sass-lang.com/)
 - Use a [**design system**](https://www.toptal.com/designers/design-systems/benefits-of-design-system)
+- Use **semantic HTML** and **ARIA attribute**
+- Follow [**Web Content Accessibility Guidelines (WCAG) 2.1**](https://www.w3.org/TR/WCAG21/)
  
 ### Mobile
 - Choose the right platform between [**Native Apps, Web Apps and Hybrid Apps**](https://aws.amazon.com/compare/the-difference-between-web-apps-native-apps-and-hybrid-apps)
@@ -134,8 +179,23 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Use **native components and services** whenever possible
 - Focus on **user experience**
 - Design **navigations**
+- Use **push notification** strategically
+- Implement **deep linking**
 - Use **deployment automation**
   - [`Fastlane`](https://fastlane.tools/)
+
+### Observability
+
+- Collect **logs, traces and metrics**
+  - [`ELK`](https://www.elastic.co/elastic-stack)
+- Implement **distributed tracing**
+  - [`Open Telemetry`](https://opentelemetry.io/)
+- Implement **SLA monitoring** e reporting
+  - [`PagerDuty`](https://www.pagerduty.com/)
+- Use an **Error Tracking** tool
+  - [`Sentry`](https://sentry.io/)
+- User **Real User Monitoring (RUM)** tools
+  - [`Google Analytics`](https://analytics.google.com/)
 
 ## Infrastructure
 
@@ -188,3 +248,14 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Configure a **deploy step**
 - Use [**blue green deployment**](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html)
 
+## Cost Optimization
+
+- Monitor cloud costs and setup **budget alerts**
+  - [`AWS Cost Explorer`](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
+  - [`Azure Cost Management`](https://azure.microsoft.com/en-us/products/cost-management/)
+  - [`Google Cloud Billing`](https://cloud.google.com/billing/docs)
+- Implement **automated downscaling of resources** based on metrics
+- Monitor **idle resources** and **zombie processes**
+- **Reserve instances** when possible
+- Use **spot instances** for non-critical workloads
+- Set serverless **max concurrency** and **rate limiting**
