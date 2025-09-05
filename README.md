@@ -17,7 +17,7 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
   - [`GitHub flow`](https://docs.github.com/en/get-started/quickstart/github-flow)
   - [`Rebase and squash`](https://matt-rickard.com/squash-merge-or-rebase) insted of merge
   - [`Code review`](https://github.com/features/code-review)
-- User **[semantic versioning]*(https://semver.org/)
+- Use **[semantic versioning](https://semver.org/)**
 - Use **[release tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging)** and release automation tools
   - [`release-it`](https://github.com/release-it/release-it)
 - Organize projects using **[monorepo](https://monorepo.tools/)**
@@ -224,8 +224,6 @@ The backbone of this list was drafted within [TwinLogix s.r.l.](https://www.twin
 - Design for **disaster recovery**
 - Design for **auto healing**
 - Monitor [**DORA metrics**](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)
-- Do **load tests**
-  - [`k6`](https://k6.io/)
 
 ## DevOps
 
